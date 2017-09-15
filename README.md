@@ -1,3 +1,3 @@
 # JavaProjects
-Java course in Netcracker / Here are my hometasks from Java course /
-First task was to draw any letter with asterisk / 
+# Here are my hometasks from Java course
+# All hometasks will have folder with name, which contains its own number
