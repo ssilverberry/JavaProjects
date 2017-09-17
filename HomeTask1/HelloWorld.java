@@ -1,31 +1,31 @@
 public class HelloWorld {
 	
-	public static void DrawHorizontLine(int d) {
-		int quantity = d;
+	public static void drawHorizontLine(int amount) {
+		int quantity = amount;
 		for(int i = 0; i < quantity; i++) {
 			System.out.print("*");
 		}
 		System.out.print('\n');
 	}
-	
-	public static void DOVL(int q) {	/*Drawing only one vertical line*/
-		int quantity = q;
+	//Drawing only one vertical line
+	public static void drawOneLine(int amount) {	
+		int quantity = amount;
 		for(int i = 0; i < quantity; i++) {
 			System.out.print("*\n");
 		}
 	} 	
-
-	public static void DrawVerticalLine(int q) { /*Drawing two vertical lines*/
-		int quantity = q;
+	//Drawing two vertical lines
+	public static void drawVerticalLine(int amount) { 
+		int quantity = amount;
 		for(int i = 0; i < quantity; i++) {
 			System.out.print("*\t*\n");
 		}
 	} 
 	
 	public static void printH () {
-		DrawVerticalLine(3);
-		DrawHorizontLine(9);
-		DrawVerticalLine(3);
+		drawVerticalLine(3);
+		drawHorizontLine(9);
+		drawVerticalLine(3);
 		System.out.println();
 	}
 	
@@ -40,80 +40,80 @@ public class HelloWorld {
 	}
 	
 	public static void printB () {
-		DrawHorizontLine(8);
-		DrawVerticalLine(3);
-		DrawHorizontLine(8);
-		DrawVerticalLine(3);
-		DrawHorizontLine(8);
+		drawHorizontLine(8);
+		drawVerticalLine(3);
+		drawHorizontLine(8);
+		drawVerticalLine(3);
+		drawHorizontLine(8);
 		System.out.println();		
 	}
 	public static void printC () {
 		System.out.print(" ");
-		DrawHorizontLine(7);
-		DOVL(4);
+		drawHorizontLine(7);
+		drawOneLine(4);
 		System.out.print(" ");
-		DrawHorizontLine(7);
+		drawHorizontLine(7);
 		System.out.println();		
 	}
 	public static void printD () {
-		DrawHorizontLine(8);
-		DrawVerticalLine(4);
-		DrawHorizontLine(8);
+		drawHorizontLine(8);
+		drawVerticalLine(4);
+		drawHorizontLine(8);
 		System.out.println();		
 	}
 	public static void printE () {
-		DrawHorizontLine(8);
-		DOVL(3);
-		DrawHorizontLine(8);
-		DOVL(3);
-		DrawHorizontLine(8);
+		drawHorizontLine(8);
+		drawOneLine(3);
+		drawHorizontLine(8);
+		drawOneLine(3);
+		drawHorizontLine(8);
 		System.out.println();		
 	}
 	public static void printF () {
-		DrawHorizontLine(8);
-		DOVL(3);
-		DrawHorizontLine(8);
-		DOVL(3);
+		drawHorizontLine(8);
+		drawOneLine(3);
+		drawHorizontLine(8);
+		drawOneLine(3);
 		System.out.println();		
 	}
 	public static void printG () {
 		System.out.print(" ");
-		DrawHorizontLine(7);
-		DOVL(2);
+		drawHorizontLine(7);
+		drawOneLine(2);
 		System.out.print("*   ");
-		DrawHorizontLine(4);
-		DrawVerticalLine(2);
+		drawHorizontLine(4);
+		drawVerticalLine(2);
 		System.out.print(" ");
-		DrawHorizontLine(7);
+		drawHorizontLine(7);
 		System.out.println();		
 	}
 	public static void printI () {
 		System.out.print("   ");
-		DrawHorizontLine(5);
+		drawHorizontLine(5);
 		System.out.print("     ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("     ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("     ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("     ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("   ");
-		DrawHorizontLine(5);
+		drawHorizontLine(5);
 		System.out.println();		
 	}
 	public static void printJ () {
 		System.out.print("        ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("        ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("        ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("        ");
-		DOVL(1);
-		DrawVerticalLine(2);
+		drawOneLine(1);
+		drawVerticalLine(2);
 		System.out.print("  ");
-		DrawHorizontLine(6);	
+		drawHorizontLine(6);	
 		System.out.println();	
 	}
 	public static void printK () {
@@ -125,8 +125,8 @@ public class HelloWorld {
 		System.out.println();		
 	}
 	public static void printL () {
-		DOVL(5);
-		DrawHorizontLine(6);
+		drawOneLine(5);
+		drawHorizontLine(6);
 		System.out.println();		
 	}
 	public static void printM () {
@@ -145,66 +145,66 @@ public class HelloWorld {
 	}
 	public static void printO () {
 		System.out.print(" ");
-		DrawHorizontLine(7);
-		DrawVerticalLine(4);
+		drawHorizontLine(7);
+		drawVerticalLine(4);
 		System.out.print(" ");
-		DrawHorizontLine(7);
+		drawHorizontLine(7);
 		System.out.println();
 	}
 	public static void printP () {
-		DrawHorizontLine(5);
+		drawHorizontLine(5);
 		System.out.println("*     *");
 		System.out.println("*     *");
 		System.out.println("*     *");
-		DrawHorizontLine(5);
-		DOVL(3);
+		drawHorizontLine(5);
+		drawOneLine(3);
 		System.out.println();
 	}
 	public static void printQ () {
 		System.out.print(" ");
-		DrawHorizontLine(7);
-		DrawVerticalLine(4);
+		drawHorizontLine(7);
+		drawVerticalLine(4);
 		System.out.print(" ");
-		DrawHorizontLine(9);
+		drawHorizontLine(9);
 		System.out.println("         *");
 		System.out.println();
 	}
 	
 	public static void printR () {
-		DrawHorizontLine(7);
-		DrawVerticalLine(2);
-		DrawHorizontLine(7);	
-		DrawVerticalLine(3);
+		drawHorizontLine(7);
+		drawVerticalLine(2);
+		drawHorizontLine(7);	
+		drawVerticalLine(3);
 		System.out.println();
 	}
 	public static void printS () {
 		System.out.print(" ");
-		DrawHorizontLine(5);
-		DOVL(2);
+		drawHorizontLine(5);
+		drawOneLine(2);
 		System.out.print(" ");
-		DrawHorizontLine(5);
+		drawHorizontLine(5);
 		System.out.println("      *");
 		System.out.println("      *");
 		System.out.print(" ");
-		DrawHorizontLine(5);
+		drawHorizontLine(5);
 		System.out.println();
 	}
 	public static void printT () {
-		DrawHorizontLine(7);
+		drawHorizontLine(7);
 		System.out.print("   ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("   ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("   ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.print("   ");
-		DOVL(1);
+		drawOneLine(1);
 		System.out.println();
 	}
 	public static void printU () {
-		DrawVerticalLine(4);
+		drawVerticalLine(4);
 		System.out.print(" ");
-		DrawHorizontLine(7);
+		drawHorizontLine(7);
 		System.out.println();
 	}
 	public static void printV () {
@@ -238,108 +238,108 @@ public class HelloWorld {
 		System.out.println();
 	}
 	public static void printZ () {
-		DrawHorizontLine(6);
+		drawHorizontLine(6);
 		System.out.println("      *");
 		System.out.println("    *  ");
 		System.out.println("  *  ");
 		System.out.println("*  ");
-		DrawHorizontLine(6);
+		drawHorizontLine(6);
 		System.out.println();
 	}
 	
 	public static void CheckLetter(String name) {
+		
 		String bio = name.toLowerCase();
-		//System.out.println(bio);
 		char[] argument = bio.toCharArray();
 
 		for(int i = 0; i < argument.length; i++) {
 			switch(argument[i]) {
-				case 'a':
-					printA();
-					break;
-				case 'b':
-					printB();
-					break;
-				case 'c':
-					printC();
-					break;
-				case 'd':
-					printD();
-					break;
-				case 'e':
-					printU();
-					break;
-				case 'f':
-					printF();
-					break;
-				case 'g':
-					printG();
-					break;
-				case 'h':
-					printH();
-					break;
-				case 'i':
-					printI();
-					break;
-				case 'j':
-					printJ();
-					break;
-				case 'k':
-					printK();
-					break;
-				case 'l':
-					printL();
-					break;
-				case 'm':
-					printM();
-					break;
-				case 'n':
-					printN();
-					break;
-				case 'o':
-					printO();
-					break;
-				case 'p':
-					printP();
-					break;
-				case 'q':
-					printQ();
-					break;
-				case 'r':
-					printR();
-					break;
-				case 's':
-					printS();
-					break;
-				case 't':
-					printT();
-					break;
-				case 'u':
-					printU();
-					break;
-				case 'v':
-					printV();
-					break;
-				case 'w':
-					printW();
-					break;
-				case 'x':
-					printX();
-					break;
-				case 'y':
-					printY();
-					break;
-				case 'z':
-					printZ();
-					break;
+			  case 'a':
+				printA();
+				break;
+			  case 'b':
+				printB();
+				break;
+			  case 'c':
+				printC();
+				break;
+			  case 'd':
+				printD();
+				break;
+			  case 'e':
+				printU();
+				break;
+			  case 'f':
+				printF();
+				break;
+			  case 'g':
+				printG();
+				break;
+			  case 'h':
+				printH();
+				break;
+			  case 'i':
+				printI();
+				break;
+			  case 'j':
+				printJ();
+				break;
+			  case 'k':
+				printK();
+				break;
+			  case 'l':
+				printL();
+				break;
+			  case 'm':
+				printM();
+				break;
+			  case 'n':
+				printN();
+				break;
+			  case 'o':
+				printO();
+				break;
+			  case 'p':
+				printP();
+				break;
+			  case 'q':
+				printQ();
+				break;
+			  case 'r':
+				printR();
+				break;
+			  case 's':
+				printS();
+				break;
+			  case 't':
+				printT();
+				break;
+			  case 'u':
+				printU();
+				break;
+			  case 'v':
+				printV();
+				break;
+			  case 'w':
+				printW();
+				break;
+			  case 'x':
+				printX();
+				break;
+			  case 'y':
+				printY();
+				break;
+			  case 'z':
+				printZ();
+				break;
 			}
 		 }
 	}
 	
 	public static void main(String[] args) {
-	  	
 		System.out.print("Hello, ");
 		System.out.print(args[0] + '\n');
+		
 		CheckLetter(args[0]);
 	}
 }
