@@ -85,7 +85,7 @@ public class HelloWorld {
     drawVerticalLine(2);
     System.out.print(" ");
     drawHorizontLine(7);
-    System.out.println();    
+    System.out.print('\n');    
   }
   public static void printI () {
     System.out.print("   ");
@@ -208,11 +208,12 @@ public class HelloWorld {
     System.out.println();
   }
   public static void printV () {
-    System.out.println("*     *");
-    System.out.println(" *   *");
-    System.out.println("  * *");
-    System.out.println("   *");
-    System.out.println();
+    System.out.println("*        *");
+    System.out.println(" *      *");
+    System.out.println("  *    *");
+    System.out.println("   *  * ");
+    System.out.println("    **");
+    System.out.print('\n');
   }
   public static void printW () {
     System.out.println("*           *");
