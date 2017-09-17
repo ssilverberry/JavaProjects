@@ -247,7 +247,7 @@ public class HelloWorld {
     System.out.println();
   }
   
-  public static void CheckLetter(String name) {
+  public static void checkLetter(String name) {
     
     String bio = name.toLowerCase();
     char[] argument = bio.toCharArray();
@@ -340,7 +340,7 @@ public class HelloWorld {
     System.out.print("Hello, ");
     System.out.print(args[0] + '\n');
     
-    CheckLetter(args[0]);
+    checkLetter(args[0]);
   }
 }
   
