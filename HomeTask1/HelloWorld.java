@@ -251,82 +251,82 @@ public class HelloWorld {
 
 		for(int i = 0; i < argument.length; i++) {
 			switch(argument[i]) {
-			  case 'a':
+		  case 'a':
 				printA();
 				break;
-			  case 'b':
+		  case 'b':
 				printB();
 				break;
-			  case 'c':
+		  case 'c':
 				printC();
 				break;
-			  case 'd':
+		  case 'd':
 				printD();
 				break;
-			  case 'e':
+		  case 'e':
 				printU();
 				break;
-			  case 'f':
+		  case 'f':
 				printF();
 				break;
-			  case 'g':
+		  case 'g':
 				printG();
 				break;
-			  case 'h':
+		  case 'h':
 				printH();
 				break;
-			  case 'i':
+		  case 'i':
 				printI();
 				break;
-			  case 'j':
+		  case 'j':
 				printJ();
 				break;
-			  case 'k':
+		  case 'k':
 				printK();
 				break;
-			  case 'l':
+		  case 'l':
 				printL();
 				break;
-			  case 'm':
+		  case 'm':
 				printM();
 				break;
-			  case 'n':
+		  case 'n':
 				printN();
 				break;
-			  case 'o':
+		  case 'o':
 				printO();
 				break;
-			  case 'p':
+		  case 'p':
 				printP();
 				break;
-			  case 'q':
+		  case 'q':
 				printQ();
 				break;
-			  case 'r':
+		  case 'r':
 				printR();
 				break;
-			  case 's':
+		  case 's':
 				printS();
 				break;
-			  case 't':
+		  case 't':
 				printT();
 				break;
-			  case 'u':
+		  case 'u':
 				printU();
 				break;
-			  case 'v':
+		  case 'v':
 				printV();
 				break;
-			  case 'w':
+		  case 'w':
 				printW();
 				break;
-			  case 'x':
+		  case 'x':
 				printX();
 				break;
-			  case 'y':
+		  case 'y':
 				printY();
 				break;
-			  case 'z':
+		  case 'z':
 				printZ();
 				break;
 			}
@@ -336,7 +336,6 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		System.out.print("Hello, ");
 		System.out.print(args[0] + '\n');
-		
 		checkLetter(args[0]);
 	}
 }
