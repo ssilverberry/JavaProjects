@@ -1,8 +1,6 @@
-package com.horiachiy.paul;
-
 import java.util.Scanner;
 
-public class Main {
+public class DataType {
 
     //function for interrupting Test
     static boolean exitBreak() {
@@ -46,7 +44,6 @@ public class Main {
                         System.out.println(rghtAns);
                      else
                         System.out.println(wrngAns);
-
                     if (exitBreak())
                         break out;
                     else
@@ -59,7 +56,6 @@ public class Main {
                         System.out.println(rghtAns);
                      else
                         System.out.println(wrngAns);
-
                     if (exitBreak())
                         break out;
                     else
@@ -68,11 +64,10 @@ public class Main {
                 if (i == 2) {
                     System.out.println(i + mdlAns + questArr[i]);
                     intAnswr = input.nextInt();
-                    if(intAnswr == 4 ) {
+                    if(intAnswr == 4 ) 
                         System.out.println(rghtAns);
-                    } else {
+                     else 
                         System.out.println(wrngAns);
-                    }
                     if (exitBreak())
                         break out;
                     else
@@ -81,11 +76,10 @@ public class Main {
                 if (i == 3) {
                     System.out.println(i + mdlAns + questArr[i]);
                     intAnswr = input.nextInt();
-                    if(intAnswr == 8 ) {
+                    if(intAnswr == 8 ) 
                         System.out.println(rghtAns);
-                    } else {
+                     else 
                         System.out.println(wrngAns);
-                    }
                     if (exitBreak())
                         break out;
                     else
@@ -94,11 +88,10 @@ public class Main {
                 if (i == 4) {
                     System.out.println(i + mdlAns + questArr[i]);
                     intAnswr = input.nextInt();
-                    if(intAnswr == 2 ) {
+                    if(intAnswr == 2 ) 
                         System.out.println(rghtAns);
-                    } else {
+                     else 
                         System.out.println(wrngAns);
-                    }
                     if (exitBreak())
                         break out;
                     else
@@ -107,11 +100,10 @@ public class Main {
                 if (i == 5) {
                     System.out.println(i + mdlAns + questArr[i]);
                     intAnswr = input.nextInt();
-                    if(intAnswr == 4) {
+                    if(intAnswr == 4) 
                         System.out.println(rghtAns);
-                    } else {
+                     else 
                         System.out.println(wrngAns);
-                    }
                     if (exitBreak())
                         break out;
                     else
@@ -120,11 +112,10 @@ public class Main {
                 if (i == 6) {
                     System.out.println(i + mdlAns + questArr[i]);
                     intAnswr = input.nextInt();
-                    if(intAnswr == 8) {
+                    if(intAnswr == 8) 
                         System.out.println(rghtAns);
-                    } else {
+                     else 
                         System.out.println(wrngAns);
-                    }
                     if (exitBreak())
                         break out;
                 }
