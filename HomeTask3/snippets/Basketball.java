@@ -1,13 +1,12 @@
 public class Basketball extends Hobby {
-    private static String name ;
-
+    private String name ;
+    private String period = "100";
+    
     public Basketball( String name) {
         this.name = name;
     }
     @Override
     public void intro() {
-        String name = "basketball";
-        String period = "100";
         System.out.print("\nMy hobby is " + "\'" + name + "\'");
         System.out.println(". And I do sport for " + "\'" + period + "\' days");
     }
