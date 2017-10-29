@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:cs="antlib:com.puppycrawl.tools.checkstyle">
+
+  <property name="build.entry.class" value=""/>
+  <property name="testrunner.skiptrace" value="true"/>
+  <property name="sources" value="sources"/>
+  
+  <basename property="project" file="${basedir}"/>
+  
+  <target name="clean">
+    <mkdir dir="build"/>
+    <delete includeEmptyDirs="true">
+      <fileset dir="build" includes="**/*"/>
+      <fileset file="style_warnings.txt"/>
+    </delete>
+  </target>
+  
+  <property name="class" location="${file}" relative="true"/>
+  
+  <target name="run-class" depends="build">
+    <script language="javascript">
+      project.setProperty("className", 
+        project.getProperty("class").
+        substr(project.getProperty("sources").length() + 1).
+        replace(new RegExp("[/\\\\]","g"),"."))
+    </script>
+    <java classpath="build/${project}.jar" classname="${className}" fork="true"/>
+  </target>
+  
+  <target name="build" depends="clean">
+    <mkdir dir="build/classes"/>
+    
+    <javac includeantruntime="false" 
+           srcdir="${sources}"
+           debug="on"
+           encoding="utf-8"
+           destdir="build/classes"/>
+           
+    <cs:checkstyle failOnViolation="false" 
+        config="../../lib/sun_checks.xml"
+        failureProperty="checkstyle_result">
+      <fileset dir="${sources}" includes="**/*.java"/>
+      <formatter type="plain" toFile="style_warnings.txt"/>
+    </cs:checkstyle>
+    
+    <script language="javascript">
+      if (project.getProperty('checkstyle_result'))
+        java.lang.System.out.println("В java файлах знайдені помилки оформлення, деталі в style_warnings.txt");
+    </script>
+    
+    <jar jarfile="build/${project}.jar" basedir="build/classes">
+      <manifest>
+        <attribute name="Main-Class" value="${build.entry.class}"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="commit-tests">
+    <mkdir dir="${basedir}/../../tests"/>
+    <delete dir="${basedir}/../../tests" includes="**/*"/>
+    <copy todir="${basedir}/../../tests">
+      <fileset dir="tests"/>
+    </copy>
+  </target>
+
+  <target name="checkout-tests">
+    <delete dir="tests" includes="**/*"/>
+    <copy todir="tests">
+      <fileset dir="${basedir}/../../tests"/>
+    </copy>
+  </target>
+  
+  <target name="test" depends="build">
+    <mkdir dir="build/test-classes"/>
+    <javac includeantruntime="false" 
+           srcdir="tests" 
+           debug="on"
+           encoding="utf-8"
+           destdir="build/test-classes">
+      <classpath>
+        <fileset dir="../../lib">
+          <include name="**/*.jar"/>
+        </fileset>
+      </classpath>
+    </javac>
+    <pathconvert property="test-classes" dirsep="." pathsep=" ">
+      <mapper type="glob" from="${basedir}\tests\*.java" to="*"/>
+      <fileset id="tests" dir="tests">
+        <include name="**/*.java"/>
+      </fileset>
+    </pathconvert>
+    <java fork="true" 
+          classname="com.netcracker.eductr.tester.runner.TestRunner"
+          failonerror="yes">
+      <jvmarg value="-ea"/>
+      <jvmarg value="-Duser.language=ua"/>
+      <jvmarg value="-Dfile.encoding=Windows-1251"/>
+      <jvmarg value="-Dtestrunner.skiptrace=${testrunner.skiptrace}"/>
+      <arg line="${sources} ${test-classes}"/>
+      <classpath>
+        <pathelement location="build/test-classes"/>
+        <pathelement location="build/${project}.jar"/>
+        <fileset dir="../../lib">
+          <include name="**/*.jar"/>
+        </fileset>
+      </classpath>
+    </java>
+  </target>
+</project>

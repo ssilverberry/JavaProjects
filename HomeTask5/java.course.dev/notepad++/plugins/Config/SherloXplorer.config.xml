@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CurrentViewMode>FolderTreeAndFileList</CurrentViewMode>
+  <TrackCurrentFile>true</TrackCurrentFile>
+  <BackColor>-1</BackColor>
+  <ForeColor>-16777216</ForeColor>
+  <ShowMenuAtBottom>false</ShowMenuAtBottom>
+  <FlowingMenuButtons>true</FlowingMenuButtons>
+  <StartupShowMode />
+  <OpenAllInNpp>false</OpenAllInNpp>
+  <ShowHiddenItems>false</ShowHiddenItems>
+  <ViewHeightRatio>2</ViewHeightRatio>
+  <FileViewStyleInt>1</FileViewStyleInt>
+  <SearchFilterCurrent />
+  <SearchFilterList />
+  <FavoritesList />
+  <SearchFilterHistoryMax>14</SearchFilterHistoryMax>
+  <NavigationHistoryMax>14</NavigationHistoryMax>
+  <CurrentFolder>D:\edu.ctr\java.course.dev\projects\test_project</CurrentFolder>
+</Config>

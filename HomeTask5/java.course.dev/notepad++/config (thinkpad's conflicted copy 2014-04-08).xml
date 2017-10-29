@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+    <GUIConfigs>
+        <!-- 3 status : "large", "small" or "hide"-->
+        <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
+        <!-- 2 status : "show" or "hide"-->
+        <GUIConfig name="StatusBar">hide</GUIConfig>
+        <!-- For all attributs, 2 status : "yes" or "no"-->
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="no" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" />
+        <!-- 2 positions : "horizontal" or "vertical"-->
+        <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
+        <!-- For the attribut of position, 2 status : docked or undocked ; 2 status : "show" or "hide" -->
+        <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
+        <GUIConfig name="TabSetting" size="4" replaceBySpace="yes" />
+        <!--App position-->
+        <GUIConfig name="AppPosition" x="492" y="0" width="812" height="612" isMaximized="yes" />
+        <!-- For the primary scintilla view,
+             2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
+             4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="hide" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="no" edge="line" edgeNbColumn="80" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="aligned" zoom2="0" />
+        <!-- For the secodary scintilla view,
+             2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
+             4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box" -->
+        <GUIConfig name="Auto-detection">yes</GUIConfig>
+        <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
+        <GUIConfig name="TrayIcon">no</GUIConfig>
+        <GUIConfig name="RememberLastSession">yes</GUIConfig>
+        <!--
+			New Document default settings :
+				format = 0/1/2 -> win/unix/mac
+				encoding = 0/1/2/3/4/5 -> ANSI/UCS2Big/UCS2small/UTF8/UTF8-BOM
+				defaultLang = 0/1/2/..
+
+			Note 1 : UTF8-BOM -> UTF8 without BOM
+			Note 2 : for defaultLang :
+					0 -> L_TXT
+					1 -> L_PHP
+					... (see source file)
+		-->
+        <GUIConfig name="NewDocDefaultSettings" format="0" encoding="4" lang="0" codepage="-1" openAnsiAsUTF8="no" />
+        <GUIConfig name="langsExcluded" gr0="0" gr1="0" gr2="0" gr3="0" gr4="0" gr5="0" gr6="0" gr7="0" langMenuCompact="yes" />
+        <!--
+		printOption is print colour setting, the following values are possible :
+			0 : WYSIWYG
+			1 : Invert colour
+			2 : B & W
+			3 : WYSIWYG but without background colour
+		-->
+        <GUIConfig name="Print" lineNumber="no" printOption="0" headerLeft="$(FULL_CURRENT_PATH)" headerMiddle="" headerRight="$(LONG_DATE) $(TIME)" headerFontName="IBMPC" headerFontStyle="1" headerFontSize="8" footerLeft="" footerMiddle="-$(CURRENT_PRINTING_PAGE)-" footerRight="" footerFontName="" footerFontStyle="0" footerFontSize="9" margeLeft="0" margeTop="0" margeRight="0" margeBottom="0" />
+        <!--
+                            Backup Setting :
+                                0 : non backup
+                                1 : simple backup
+                                2 : verbose backup
+                      -->
+        <GUIConfig name="Backup" action="0" useCustumDir="no" dir="" />
+        <GUIConfig name="TaskList">yes</GUIConfig>
+        <GUIConfig name="SaveOpenFileInSameDir">no</GUIConfig>
+        <!--
+			value 0 for the folloing parameters means invisible :
+			leftWidth, topHight, rightWidth, bottomHight
+			
+					position value for the PluginDlg:
+						
+						0 : left
+						 1 : right
+						2 : top
+						3 : bottom
+						>= 4 : undocked -> FloatingWindow id
+			-->
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20080426">no</GUIConfig>
+        <GUIConfig name="MaitainIndent">yes</GUIConfig>
+        <GUIConfig name="MRU">yes</GUIConfig>
+        <GUIConfig name="URL">0</GUIConfig>
+        <GUIConfig name="globalOverride" fg="no" bg="no" font="yes" fontSize="yes" bold="no" italic="no" underline="no" />
+        <GUIConfig name="auto-completion" autoCAction="0" triggerFromNbChar="1" funcParams="no" />
+        <GUIConfig name="sessionExt"></GUIConfig>
+        <GUIConfig name="SmartHighLight">yes</GUIConfig>
+        <GUIConfig name="TagsMatchHighLight" TagAttrHighLight="yes" HighLightNonHtmlZone="no">yes</GUIConfig>
+        <GUIConfig name="MenuBar">show</GUIConfig>
+        <GUIConfig name="Caret" width="1" blinkRate="250" />
+        <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
+        <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
+        <GUIConfig name="titleBar" short="no" />
+        <GUIConfig name="stylerTheme" path="C:\Dropbox\netcracker.java\edu.ctr\java.course.dev\notepad++\stylers.xml" />
+        <GUIConfig name="DockingManager" leftWidth="91" rightWidth="200" topHeight="200" bottomHeight="299">
+            <PluginDlg pluginName="LightExplorer.dll" id="0" curr="0" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="NppExec.dll" id="2" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="SherloXplorer.dll" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Explorer.dll" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Explorer.dll" id="1" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
+            <ActiveTabs cont="0" activeTab="0" />
+            <ActiveTabs cont="1" activeTab="-1" />
+            <ActiveTabs cont="2" activeTab="-1" />
+            <ActiveTabs cont="3" activeTab="-1" />
+        </GUIConfig>
+    </GUIConfigs>
+    <!-- The History of opened files list -->
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="2" transparencyMode="1" transparency="150">
+        <Find name="formatTime" />
+        <Find name="dfStatic" />
+        <Find name="Get Access to 10G Non-Channelized Involvement" />
+        <Find name="9134906691113009940" />
+        <Find name="data\.(.*)" />
+        <Find name="\s+" />
+        <Find name=", " />
+        <Find name="getPriceItems" />
+        <Find name='&quot;KEY&quot; = v.&quot;KEY&quot;, ' />
+        <Find name=' and t.&quot;VALUE&quot; = v.&quot;VALUE&quot;' />
+        <Replace name="obj.\1 = data.\1;" />
+        <Replace name="\n" />
+        <Replace name="copy" />
+        <Replace name="Task.create" />
+        <Replace name=", " />
+        <Replace name="assertNextTimeAfter" />
+        <Replace name="NEVER" />
+    </FindHistory>
+    <History nbMaxFile="15" inSubMenu="no" customLength="-1">
+        <File filename="D:\edu.ctr\java.course.dev\projects\plutenko\readme.txt" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\pedchenko\tests\com\netcracker\eductr\tasks\tests\Dates.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\pedchenko\sources\ua\sumdu\j2se\Bohdan_Pedchenko\tasks\Task.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\pedchenko\sources\ua\sumdu\j2se\Bohdan_Pedchenko\tasks\Tasks.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\pedchenko\tests\com\netcracker\eductr\tasks\tests\T5_TasksTest.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\pedchenko\readme.txt" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\grishko.3\sources\ua\edu\sumdu\j2se\alexanderGrishko\tasks\LinkedTaskList.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\kuznetsov.3\sources\ua\sumdu\j2se\kuznetsov\tasks\LinkedTaskList.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\pedchanko.3\sources\ua\sumdu\j2se\Bohdan_Pedchenko\tasks\LinkedTaskList.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\rudyj.e\sources\ua\edu\sumdu\j2se\Andriy\tasks\LinkedTaskList.java" />
+        <File filename="D:\edu.ctr\java.course.dev\projects\rudenko.3\sources\ua\sumdu\j2se\rudenko\tasks\LinkedTaskList.java" />
+        <File filename="C:\Dropbox\netcracker.java\edu.ctr\java.course.dev\projects\tasks\tests\com\netcracker\eductr\tasks\tests\T1_TaskTest1.java" />
+        <File filename="C:\Dropbox\netcracker.java\edu.ctr\java.course.dev\projects\tasks.luk\readme.txt" />
+        <File filename="C:\Dropbox\netcracker.java\edu.ctr\java.course.dev\projects\tasks.luk\sources\ua\edu\sumy\j2se\lukyanenkoYulia\tasks\ArrayTaskList.java" />
+    </History>
+</NotepadPlus>
