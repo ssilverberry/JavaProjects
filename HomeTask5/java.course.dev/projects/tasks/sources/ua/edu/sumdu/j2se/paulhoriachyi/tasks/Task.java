@@ -177,31 +177,16 @@ public class Task {
      */
     public int nextTimeAfter(int current) {
         int curr = current;
-        int answr1 = 0;
-        int answr2 = 0;
-        int answr3 = 0;
-    
-        for (int i = start; i < end; i += interval) {
-            if (i < curr) {
-                answr1 = i + interval;
-                
-            } else if (i == curr) {
-                answr2 = i + interval;
-                
-            } else if (i > curr) {
-                answr3 = i;
-                break;
-            }
-        }
+        int i = start;
+        System.out.println(i + "it is a start");
         if (isActive() && isRepeated()) {
-            if (curr < this.start)
-                return this.start;
-            else if (curr == this.start)
-                return answr2;
-            else if (curr < end / 2)
-                return answr3;
-            else if (curr > end / 2 && curr < end)
-                return -1;
+            while(i < end) {
+                if (curr < i)
+                    return i;
+                else if (curr == i)
+                    return i + interval;
+                i += interval;
+            }  
         }
         if (isActive() && !isRepeated()) {
             if (this.interval == 0 && curr < this.time)

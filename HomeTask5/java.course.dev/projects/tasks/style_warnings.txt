@@ -1,2 +1,3 @@
 Starting audit...
+E:\Pasha\NetCracker\java.course.dev\java.course.dev\projects\tasks\sources\ua\edu\sumdu\j2se\paulhoriachyi\tasks\Task.java:184:18: 'while' is not followed by whitespace.
 Audit done.
