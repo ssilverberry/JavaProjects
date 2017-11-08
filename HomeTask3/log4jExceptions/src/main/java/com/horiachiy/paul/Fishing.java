@@ -1,3 +1,5 @@
+package com.horiachiy.paul;
+
 public class Fishing extends Hobby {
     private String name;
     private String b;
@@ -13,7 +15,7 @@ public class Fishing extends Hobby {
         System.out.print(". And I don't like to do sport \n");
     }
     @Override
-    public void greetings() {
+    public void greetings(int some) {
         b = "I do \'" + name + "\' for " + a + " days";
         System.out.println(b);
     }
