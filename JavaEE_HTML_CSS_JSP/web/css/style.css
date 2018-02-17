@@ -1,0 +1,45 @@
+.imagep {
+    width: 700px;
+    margin: 0 auto;
+}
+.form {
+    width:  250px;
+    margin: 100px auto;
+}
+.inputf {
+    width: 200px;
+    margin:  10px 0 10px 0;
+}
+.inputs {
+    width: 100px;
+    height: 35px;
+    margin: 0 45px;
+    background-color: lightgreen;
+}
+.inputs:hover {
+    transform: scale(1.3,1.3);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#spanid {
+    width: 250px;
+    margin: 0px auto;
+}
+.box {
+    width: 200px;
+    height: 75px;
+    background-color: #a3ec97;
+    margin: 10% auto;
+    box-shadow: 10px 9px 5px 1px rgba(170,170,170,1);
+    text-align: center;
+    line-height: 60px;
+
+}
+.box:hover {
+    cursor: pointer;
+    margin: 8% auto;
+}
+.child {
+    font-weight: bolder;
+    font-size: 21px;
+}
