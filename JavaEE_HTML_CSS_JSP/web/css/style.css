@@ -26,20 +26,48 @@
     margin: 0px auto;
 }
 .box {
+    position: absolute;
     width: 200px;
     height: 75px;
     background-color: #a3ec97;
-    margin: 10% auto;
+    right: 1%;
     box-shadow: 10px 9px 5px 1px rgba(170,170,170,1);
     text-align: center;
     line-height: 60px;
-
+    transition: all 1s;
 }
 .box:hover {
     cursor: pointer;
-    margin: 8% auto;
+    right: 5%;
 }
 .child {
     font-weight: bolder;
     font-size: 21px;
+}
+.lorem {
+    position: absolute;
+    width: 450px;
+    margin-top: 20px;
+    left: 37%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.second_lorem {
+    position: absolute;
+    background-color: #dcdde1;
+    width: 220px;
+    margin-top: 220px;
+    left: 37%;
+    box-shadow: 10px 9px 5px 1px rgba(170,170,170,1);
+    border: none;
+}
+.third_lorem {
+    background-color: #9c88ff;
+    width: 220px;
+    margin-top: 220px;
+    left: calc(40% + 220px);
+    box-shadow: 10px 9px 5px 1px rgba(170,170,170,1);
+    border: none;
 }
